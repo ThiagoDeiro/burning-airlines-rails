@@ -5,7 +5,7 @@ class CreateFlights < ActiveRecord::Migration[6.0]
       t.date :date
       t.string :origin
       t.string :destination
-      t.string :plane
+      t.references :plane, null: false, foreign_key: true
 
       t.timestamps
     end

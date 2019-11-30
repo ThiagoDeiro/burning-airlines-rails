@@ -2,14 +2,14 @@
 
 one:
   flight_number: 1
-  date: 2019-11-29
+  date: 2019-11-30
   origin: MyString
   destination: MyString
-  plane: MyString
+  plane: one
 
 two:
   flight_number: 1
-  date: 2019-11-29
+  date: 2019-11-30
   origin: MyString
   destination: MyString
-  plane: MyString
+  plane: two

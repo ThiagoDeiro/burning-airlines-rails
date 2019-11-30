@@ -18,7 +18,7 @@ class FlightsTest < ApplicationSystemTestCase
     fill_in "Destination", with: @flight.destination
     fill_in "Flight number", with: @flight.flight_number
     fill_in "Origin", with: @flight.origin
-    fill_in "Plane", with: @flight.plane
+    fill_in "Plane", with: @flight.plane_id
     click_on "Create Flight"
 
     assert_text "Flight was successfully created"
@@ -33,7 +33,7 @@ class FlightsTest < ApplicationSystemTestCase
     fill_in "Destination", with: @flight.destination
     fill_in "Flight number", with: @flight.flight_number
     fill_in "Origin", with: @flight.origin
-    fill_in "Plane", with: @flight.plane
+    fill_in "Plane", with: @flight.plane_id
     click_on "Update Flight"
 
     assert_text "Flight was successfully updated"
